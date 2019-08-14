@@ -132,9 +132,138 @@ table {
 }
 html,
 body {
+  width: 800px;
   height: 100%;
+  font-size: 62.5%;
 }
-h1,
-p {
-  color: red;
+/* variables */
+/* mixins */
+.button-color {
+  background-color: #808080;
+  color: white;
+}
+.flex-display {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* top nav bar */
+#top-header {
+  margin: 2px auto;
+  width: 90%;
+  background-color: #d9d9d9;
+  /* end of nav */
+}
+#top-header nav {
+  display: flex;
+  justify-content: flex-end;
+  /* end of a */
+}
+#top-header nav a {
+  font-family: 'Sansita', sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 1% 3%;
+}
+/* end of top header  */
+/* Photo and name content */
+#header-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  border-bottom: 1px solid #d9d9d9;
+  /* end of header div */
+}
+#header-container .header-photo {
+  width: 50%;
+}
+#header-container .header-photo img {
+  width: 80%;
+}
+#header-container div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  width: 50%;
+  margin: 5px auto;
+  /* end of h1 */
+  /* end of h2 */
+  /* end of p */
+  /* end button */
+}
+#header-container div h1 {
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+}
+#header-container div h3 {
+  font-size: 2rem;
+  font-family: 'Sansita', sans-serif;
+}
+#header-container div p {
+  font-size: 1.5rem;
+  font-family: 'PT Sans', sans-serif;
+}
+#header-container div .button {
+  padding: 10px 20px;
+  margin: 3px auto;
+  border: 1px solid black;
+  background-color: #808080;
+  color: white;
+  border-radius: 20px;
+}
+/* end of header container */
+/* middle content */
+#mid-content {
+  width: 90%
+	margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+#mid-content div {
+  width: 50%;
+  background-color: #d9d9d9;
+  justify-content: center;
+  text-align: center;
+}
+#mid-content h3 {
+  font-size: 1.5rem;
+  font-family: 'Sansita', sans-serif;
+}
+#mid-content p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+}
+/* end of mid content */
+/* bottom contend */
+#bottom-content {
+  width: 90%;
+  margin: 10px auto;
+  padding: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#bottom-content div h3 {
+  width: 90%;
+  font-size: 1.5rem;
+  font-family: 'Sansita', sans-serif;
+  justify-content: center;
+}
+#bottom-content th,
+#bottom-content td {
+  border: 1px solid black;
+  padding: 0.25em;
+  text-align: center;
+  width: auto;
+}
+/* end of bottom content */
+/* footer */
+#footer-content {
+  width: 90%;
+  margin: 10px auto;
+  background-color: #d9d9d9;
 }
