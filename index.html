@@ -8,13 +8,136 @@
 
   <link rel="stylesheet" href="css/index.css">
 
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Pacifico|Sansita&display=swap" rel="stylesheet">
+  
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
-  <p>Resume</p>
+  <header id="top-header">
+    <nav class="top-navbar">
+      <a href="#">Home</a>
+      <a href="#">Details</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section id="header-container"> <!--top container with photo, name -->
+
+    <div class="header-photo">
+      <img src="image/IMG_3945.JPG" alt="Grad photo">
+    </div>
+
+    <div class="header-content">
+      <div class="item 1">
+          <h1>Vanna Sok</h1>
+          <h3>Full Stack Web Developer</h3>
+      </div>
+      <div class="item 2">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius reiciendis provident alias nostrum maiores quidem dolorum quibusdam suscipit vel nesciunt, cupiditate, ipsum aspernatur nisi ex aut atque ab architecto aperiam</p>
+      </div>
+      <div class="item 3">
+          <button class="button" onclick="window.location.href = 'Vanna-Sok-Resume.pdf' ">View Resume</button>
+      </div>
+      
+    </div>
+    
+  </section><!-- end of header content -->
+
+    <section id="mid-content"> <!-- middle content: education, skills -->
+      <div class="myInfo">
+        <h3>Education</h3>
+        <p>Grambling State University, Louisiana</p>
+        <p>BS in Computer Science</p>
+        <p>GPA: 3.62</p>
+
+      </div>
+      <div class="skills">
+        <h3>Skills</h3>
+          <p>HMTL, CSS, Javascript</p>
+          <p>Visual Studio Code</p>
+          <p>NetBeans</p>
+          <p>Lego Mindstroms</p>
+      </div>
+    </section> <!-- end of mid content section -->
+
+    <section id="bottom-content"> <!-- bottom content: work history --> 
+      <div>
+        <h3>Work experience</h3>
+      </div>
+
+      <div>
+          <table class="work-table">
+
+              <tr class="table-row 1">
+                <th scope="col">Company</th>
+                <th scope="col">Title</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Details</th>
+              </tr>
+      
+              <tr class="table-row 2">
+                <td>Innovation Academy<br>Fulerton, CA</td> <!-- experience 1 -->
+                <td>Teacher Assistant</td>
+                <td>5 months</td>
+                <td>
+                  <li>tutored grade 3-8th students basic ev3 programming.</li>
+                  <li>guided students to build ev3 basic driving and competition robots.</li>
+                </td>
+              </tr>
+      
+              <tr class="table-row 3">
+                <td>Grambling State University<br>Grambling, Louisiana</td>
+                <td>Vex Robotics Research<br>Volunteer</td>
+                <td>2 years</td>
+                <td>
+                  <li>Designed and built robots to compete against other teams in a game-based engineering challenge.</li>
+                  <li>Presented in the Academic Summit (University of Louisiana System), the methods and process of programming and testing the robots.</li>
+                </td>
+              </tr>
+      
+              <tr class="table-row 4">
+                <td>Grambling State University<br>Mathematics and Physics Department</td>
+                <td>Teaching Assistant</td>
+                <td>3 months</td>
+                <td>
+                  <li>Tutored entry-level statistic and probability course</li>
+                  <li>Help students learn the step by step of the probability and statistic problems and solutions.</li>
+                </td>
+              </tr>
+      
+              <tr class="table-row 5">
+                <td>Grambling State University<br>Yearbook Department</td>
+                <td>Photographer</td>
+                <td>2.5 years</td>
+                <td>
+                  <li>Photographed University events to be used in the school yearbook</li>
+                  <li>Edits, arrange, and color corrects photography for different purposes</li>
+      
+                </td>
+              </tr>
+            </table> <!-- end of table -->
+      
+      </div>
+      
+    </section> <!-- end of bottom section -->
+
+  <footer class="footer-content">
+    <h3>Contact Me</h3>
+    <address>
+      Vanna Sok <br>
+      vannasok92@yahoo.com <br>
+      562-***-**** <br>
+      Lakewood, California.
+
+    </address>
+    
+
+  </footer>
+
 </body>
 </html>
